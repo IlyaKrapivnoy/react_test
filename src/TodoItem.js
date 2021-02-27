@@ -6,11 +6,11 @@ export default function TodoItem({title, id, completed}) {
   const cls = ['todo']
 
   if(checked) {
-    cls.push('completed')
+    cls.push('completed') // -- adding class
   }
   
   return (
-    <li className={cls.join(' ')}>
+    <li className={cls.join(' ')}> 
       <label>
         <input
           type="checkbox"
